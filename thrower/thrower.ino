@@ -1,6 +1,6 @@
 #include <Servo.h>
 #define DELAYMEDIO delay(800);
-#define DELAYCORTO delay(500);è
+#define DELAYCORTO delay(500);
 
 const int triggerPort = 6;
 const int echoPort = 7;
