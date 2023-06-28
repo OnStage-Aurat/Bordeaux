@@ -16,8 +16,8 @@ char IncomingByte = 'n';
 
 void setup()
 {
-
   Serial.begin(9600);
+  Serial1.begin(9600);
   OX1.attach(2); // Quello a sinistra
   OY1.attach(3);
   OX2.attach(4); // Quello a destra
@@ -43,10 +43,12 @@ void loop() {
   Serial.println(IncomingByte);
   switch (IncomingByte) {
     case 't': guardosx(); break;
-    case 's': stupito(); break;
-    case 'd': felice(); break;
+    case 'o': guardodx();break;
+    case 's': triste(); break;
+    case 'h': felice(); break;
     case 'l': neutro(); break;
-    case 'k': oscillaocchi();break; 
+    case 'f': Serial1.print('f'); break;
+    case 'k': Serial1.print('k'); break;
     case 'n': break;
   }
   IncomingByte = 'n';
