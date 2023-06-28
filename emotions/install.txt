@@ -1,0 +1,4 @@
+pip aggiornato
+python 3.8.6
+pip install tensorflow https://pypi.org/project/tensorflow/
+pip install keras https://pypi.org/project/keras/
